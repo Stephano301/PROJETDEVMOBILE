@@ -235,43 +235,38 @@
     <nav class="sidebar-nav">
         <a href="{{ route('admin.dashboard') }}"
            class="nav-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
-            <i class="fa-solid fa-gauge-high"></i>
-            Tableau de bord
+            <i class="fa-solid fa-gauge-high"></i> Tableau de bord
         </a>
         <a href="{{ route('admin.users') }}"
            class="nav-item {{ request()->routeIs('admin.users') ? 'active' : '' }}">
-            <i class="fa-solid fa-users"></i>
-            Utilisateurs
+            <i class="fa-solid fa-users"></i> Utilisateurs
         </a>
         <a href="{{ route('admin.providers') }}"
            class="nav-item {{ request()->routeIs('admin.providers') ? 'active' : '' }}">
-            <i class="fa-solid fa-user-tie"></i>
-            Prestataires
+            <i class="fa-solid fa-user-tie"></i> Prestataires
         </a>
-        <a href="#" class="nav-item">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            Services
+        <a href="{{ route('admin.services') }}"
+           class="nav-item {{ request()->routeIs('admin.services') ? 'active' : '' }}">
+            <i class="fa-solid fa-screwdriver-wrench"></i> Services
         </a>
-        <a href="#" class="nav-item">
-            <i class="fa-solid fa-tags"></i>
-            Catégories
+        <a href="{{ route('admin.categories') }}"
+           class="nav-item {{ request()->routeIs('admin.categories') ? 'active' : '' }}">
+            <i class="fa-solid fa-tags"></i> Catégories
         </a>
         <a href="{{ route('admin.bookings') }}"
            class="nav-item {{ request()->routeIs('admin.bookings') ? 'active' : '' }}">
-            <i class="fa-solid fa-calendar-check"></i>
-            Réservations
+            <i class="fa-solid fa-calendar-check"></i> Réservations
+        </a>
+        <a href="{{ route('admin.payments') }}"
+           class="nav-item {{ request()->routeIs('admin.payments') ? 'active' : '' }}">
+            <i class="fa-solid fa-credit-card"></i> Paiements
+        </a>
+        <a href="{{ route('admin.reviews') }}"
+           class="nav-item {{ request()->routeIs('admin.reviews') ? 'active' : '' }}">
+            <i class="fa-solid fa-star"></i> Avis & Notes
         </a>
         <a href="#" class="nav-item">
-            <i class="fa-solid fa-credit-card"></i>
-            Paiements
-        </a>
-        <a href="#" class="nav-item">
-            <i class="fa-solid fa-star"></i>
-            Avis & Notes
-        </a>
-        <a href="#" class="nav-item">
-            <i class="fa-solid fa-gear"></i>
-            Paramètres
+            <i class="fa-solid fa-gear"></i> Paramètres
         </a>
     </nav>
 
